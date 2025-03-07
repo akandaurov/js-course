@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.expandable {
+  width: 300px;
+}
+
+.expandable .symbol {
+  display: inline-block;
+}
+
+.expandable button {
+  width: 100%;
+}
+
+.expandable .content {
+  display: none;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+  padding: 16px;
+  background: #ffffe0;
+}
+
+.expandable.expanded .symbol {
+  transform: rotate(90deg);
+}
+
+.expandable.expanded .content {
+  display: block;
+}

@@ -1,1 +1,1 @@
-# js-course
+Sample JS demonstration project with Prettier formatter
