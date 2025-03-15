@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Course - Lesson 2</title>
+    <script src="script2.js"></script>
+    <script src="script1.js"></script>
+  </head>
+  <body>
+    <h1>JS Course - Lesson 2</h1>
+    <p>We would try to learn JS a little bit</p>
+    <button id="button1" onclick="script1()()">Test</button>
+    <script>
+      var a = 10;
+      function checksumTest() {
+        const strings = [
+          'dhfjkdhjkfhjkghjkf',
+          'Строка 2',
+          'Строка 2 ',
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id velit erat. Aliquam facilisis enim in ultrices ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id faucibus leo. Donec varius eros quis mollis tristique. Donec orci risus, convallis a consectetur ac, elementum sit amet lorem. In ornare nisl non viverra consequat. Etiam commodo sagittis diam nec vestibulum. Aliquam erat volutpat. Nam tempor elit eu mi condimentum eleifend. Mauris nec leo eu elit tincidunt dictum.
+
+Mauris volutpat arcu ante, et volutpat ante semper sit amet. Nullam eget dapibus nibh. Cras egestas urna pharetra sem bibendum, id pharetra mi fringilla. Cras ut magna pulvinar, tempus justo ac, vulputate lectus. Quisque ullamcorper, ligula sed hendrerit varius, tellus eros cursus purus, nec ultrices lorem ligula et tellus. Phasellus mattis libero odio, eu euismod mauris faucibus et. Pellentesque nunc metus, convallis quis finibus in, posuere sed sapien. Sed accumsan vestibulum tellus. Nulla a euismod erat, eget maximus eros. Quisque fringilla laoreet luctus. Donec et neque vel orci scelerisque rhoncus. Donec et nisi tellus. In quis aliquet diam. Phasellus consequat lectus ut purus lobortis, ut facilisis turpis sollicitudin.
+
+Pellentesque at lobortis justo. Nullam rshoncus lacus sit amet dolor rutrum, vel mollis metus pretium. Aliquam erat volutpat. Sed dui ipsum, bibendum a tortor vel, dictum auctor purus. Suspendisse laoreet scelerisque orci vitae lobortis. Integer vulputate ac lectus ut ultrices. Ut varius elit sed sapien pellentesque mollis. Vestibulum posuere, metus non luctus condimentum, libero nisi fermentum augue, nec dictum odio massa eget neque. Quisque hendrerit felis et bibendum auctor. Vivamus non sagittis metus, vitae iaculis nibh. Etiam quis feugiat ante, quis tempus felis. Integer consequat luctus tortor non tempus. Suspendisse ullamcorper sed leo sed feugiat. Sed molestie porttitor felis, eget molestie nulla tincidunt quis.
+
+Maecenas urna turpis, accumsan ac gravida imperdiet, lobortis id enim. Morbi auctor dictum suscipit. Fusce efficitur, odio sit amet ornare scelerisque, est sem lobortis purus, vitae tincidunt massa nisl et libero. Nullam et enim a nisl auctor consectetur. Sed ut diam a sem venenatis semper. Donec eu metus dignissim, blandit felis vitae, pharetra tortor. Maecenas tellus nisi, feugiat ac accumsan vel, dapibus vitae magna. Integer in ipsum id sem venenatis consectetur in eu dui. Vestibulum semper, purus quis tempus luctus, lacus lorem sagittis massa, eu consectetur neque turpis eget arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur condimentum nisl lectus, sit amet fringilla orci pellentesque ac. Cras sodales non elit maximus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer et leo eget ex eleifend molestie ac eu ante.
+
+Maecenas sagittis varius nulla at tempus. Etiam risus eros, porta sed magna vel, laoreet iaculis urna. Cras et purus ultricies, gravida arcu non, malesuada odio. Maecenas vestibulum mauris ac urna mattis euismod. Nam in consectetur felis. Curabitur non pellentesque enim, et facilisis augue. Aenean eu maximus eros, non sagittis erat. Ut porta erat eu orci tristique, eget scelerisque est congue. Praesent eu erat sit amet massa congue viverra. In viverra diam eget felis dictum, at efficitur dolor aliquam. Proin auctor velit molestie ultrices consequat. Cras mollis sed metus nec molestie. Nunc id venenatis elit.`,
+        ];
+
+        for (let i = 0; i < strings.length; i++) {
+          const string = strings[i];
+          console.log({ string, checksum: checksum(string) });
+        }
+      }
+
+      const testFuncWithValue = () => {
+        const obj1 = funcWithIncreasedValue();
+        const obj2 = funcWithIncreasedValue();
+
+        console.log({ obj1Value: obj1.value() });
+
+        obj1.increase();
+        obj1.increase();
+
+        console.log({ obj1Value: obj1.value() });
+
+        obj1.decrease();
+        obj1.decrease();
+        obj1.decrease();
+
+        console.log({ obj1Value: obj1.value() });
+      };
+    </script>
+
+    <button onclick="checksumTest()">Checksum test</button>
+
+    <button onclick="testFuncWithValue()">Test func with value</button>
+  </body>
+</html>
