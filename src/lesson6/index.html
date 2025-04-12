@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <title>JS Course - Lesson 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script src="script1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="p-3 text-center">JS Course - Lesson 6</h1>
+      <div class="mt-6 row gap-5 justify-content-center">
+        <div class="col-4 p-5">
+          <div id="id2" class="alert alert-primary" role="alert">
+            Click on +/- buttons to change the number
+            <br />
+            <span id="spnNumber" class="badge bg-secondary">0</span>
+          </div>
+          <div class="d-flex justify-content-center gap-2">
+            <button class="btn btn-primary" id="btnPlus">+</button>
+            <button class="btn btn-primary" id="btnMinus">-</button>
+          </div>
+          <button class="btn btn-danger m-3" onclick="gotoLesson1()">
+            Go To Lesson 1
+          </button>
+        </div>
+        <div class="col-4 p-5">
+          <div id="inputPrompt" class="alert alert-secondary" role="alert">
+            Change the input text.
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="text" id="input1" />
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            <div>
+              Entered text:
+              <br />
+              <span class="badge text-bg-info"></span>
+            </div>
+          </div>
+          <div class="mb-3 row gap-2">
+            <button onclick="toggleColor()" class="btn btn-primary">
+              Toggle color
+            </button>
+            <button id="id1" onclick="changeText()" class="btn btn-secondary">
+              Change Text
+            </button>
+            <buttom id="btnDynamic" class="btn">Dynamic color</buttom>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
